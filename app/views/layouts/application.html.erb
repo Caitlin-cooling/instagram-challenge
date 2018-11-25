@@ -11,14 +11,12 @@
   </head>
 
   <body>
-
     <nav class="navbar navbar-default">
     <div class="container">
       <div id="navbar">
         <ul class="nav navbar-nav">
           <% if user_signed_in? %>
           <li><%= gravatar_for current_user %></li>
-          <li><%= link_to 'Posts', posts_path %></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <%= current_user.name %>
@@ -35,7 +33,7 @@
           <% end %>
         </ul>
         <ul class="nav navbar-nav">
-          <li><%= link_to 'Home', root_path %></li>
+          <li><%= link_to 'Home', posts_path %></li>
         </ul>
         <ul class="insta">
           <li>Instagram</li>
