@@ -5,6 +5,7 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -17,13 +18,13 @@
         <ul class="nav navbar-nav">
           <% if user_signed_in? %>
           <li><%= gravatar_for current_user %></li>
+          <li><%= link_to 'Posts', posts_path %></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <%= current_user.name %>
                 <span class="caret"></span>
               </a>
               <ul class="dropdown-menu" role="menu">
-                <li><%= link_to 'Posts', posts_path %></li>
                 <li><%= link_to 'Profile', edit_user_registration_path %></li>
                 <li><%= link_to 'Log out', destroy_user_session_path, method: :delete %></li>
               </ul>
@@ -35,6 +36,9 @@
         </ul>
         <ul class="nav navbar-nav">
           <li><%= link_to 'Home', root_path %></li>
+        </ul>
+        <ul class="insta">
+          <li>Instagram</li>
         </ul>
       </div>
     </div>

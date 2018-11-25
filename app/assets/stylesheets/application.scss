@@ -17,21 +17,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-.navbar-default .navbar-nav > li > a {
-  color: white;
+ul {
+  list-style-type: none;
 }
 
-.navbar-header {
+h1 {
+
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #484848;
+}
+
+.insta {
+  font-family: 'Satisfy', cursive;
   color: white;
+  font-size: 2em;
+  float: right;
+  padding-top: 4%;
 }
 
 .navbar {
-  background-color: #1995AD;
+  background-color: #C4DFE6;
   border: none;
 }
 
 .jumbotron {
-  background-color: #A1D6E2;
+  background-color: #66A5AD;
 }
 
 .post-image {

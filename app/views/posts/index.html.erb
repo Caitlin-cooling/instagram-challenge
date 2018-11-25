@@ -1,27 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Posts</h1>
+<%= button_to 'New Post', new_post_path, method: :get %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Caption</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @posts.each do |post| %>
-      <tr>
-        <td><%= post.caption %></td>
-        <td><%= link_to 'Show', post %></td>
-        <td><%= link_to 'Edit', edit_post_path(post) %></td>
-        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
+<% @posts.each do |post| %>
+  <ul>
+    <li><%= image_tag(post.image, class:'post-image') %></li>
+    <li><%= post.caption %></li>
+    <li><%= button_to 'Edit', edit_post_path(post), method: :get %></li>
+    <li><%= button_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, method: :get %></li>
+  </ul>
+<% end %>
