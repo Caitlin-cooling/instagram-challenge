@@ -1,7 +1,10 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Caption:</strong>
+  <div>
+    <%= image_tag(@post.image, class:"post-image") %>
+  </div>
+  <br>
   <%= @post.caption %>
 </p>
 
