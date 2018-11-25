@@ -15,10 +15,8 @@
     <div class="container">
       <div id="navbar">
         <ul class="nav navbar-nav">
-          <li><%= link_to 'Home', root_path %></li>
-        </ul>
-        <ul class="nav navbar-nav">
           <% if user_signed_in? %>
+          <li><%= gravatar_for current_user %></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <%= current_user.name %>
@@ -33,6 +31,9 @@
             <li><%= link_to 'Log In', new_user_session_path %></li>
             <li><%= link_to 'Sign Up', new_user_registration_path %></li>
           <% end %>
+        </ul>
+        <ul class="nav navbar-nav">
+          <li><%= link_to 'Home', root_path %></li>
         </ul>
       </div>
     </div>
