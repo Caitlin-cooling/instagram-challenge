@@ -8,6 +8,6 @@
     <li><%= image_tag(post.image, class:'post-image') %></li>
     <li><%= post.caption %></li>
     <li><%= button_to 'Edit', edit_post_path(post), method: :get %></li>
-    <li><%= button_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' }, method: :get %></li>
+    <li><%= button_to 'Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, method: :get %></li>
   </ul>
 <% end %>
