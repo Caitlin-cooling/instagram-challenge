@@ -1,6 +1,7 @@
 AllCops:
   TargetRubyVersion: 2.5
   Exclude:
+    - 'vendor/bundle/**/*'
     - 'db/'
     - 'app/helpers/*.rb'
 
