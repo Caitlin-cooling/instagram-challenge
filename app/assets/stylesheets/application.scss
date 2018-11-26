@@ -25,6 +25,10 @@ h2 {
   font-weight: 300;
 }
 
+p {
+  color: #484848;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #484848;
   font-weight: 300;
@@ -48,6 +52,13 @@ h2 {
 }
 
 .post-image {
-  width: 40%;
+  width: 30%;
   height: auto;
+  transform: rotate(90deg);
+}
+
+.pictures {
+  // position: absolute;
+  // display:block;
+  left: 25%;
 }
