@@ -9,6 +9,7 @@
       <div class="image">
         <% user = User.find(post.user_id) %>
         <%= user.name %>
+        <%= gravatar_for user %>
         <li><%= image_tag(post.image, class:'post-image') %></li><br>
       </div>
       <li><%= post.caption %></li>
