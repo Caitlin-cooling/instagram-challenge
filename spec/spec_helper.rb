@@ -17,6 +17,7 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 
 SimpleCov.start do
   add_filter "app"
+  add_filter "helper"
 end
 #
 # Given that it is always loaded, you are encouraged to keep this file as
