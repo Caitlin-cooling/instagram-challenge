@@ -5,8 +5,10 @@
 
 <% @posts.each do |post| %>
   <ul>
-    <div class="pictures">
-      <li><%= image_tag(post.image, class:'post-image') %></li><br>
+    <div class="post">
+      <div class="image">
+        <li><%= image_tag(post.image, class:'post-image') %></li><br>
+      </div>
       <li><%= post.caption %></li>
       <li><%= post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
       <li><%= button_to 'Edit', edit_post_path(post), method: :get %></li>
