@@ -55,7 +55,7 @@ group :test do
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'coveralls', require: false
   gem 'rspec-rails'
-  gem "rubocop-rails"
+  gem 'rubocop-rails', '~> 1.5'
   gem 'simplecov'
   gem 'simplecov-console'
   gem 'selenium-webdriver'
