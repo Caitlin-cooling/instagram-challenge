@@ -15,5 +15,3 @@ Style/StringLiteralsInInterpolation:
 
 Layout:
   EnforcedStyle: normal
-
-TargetRubyVersion: 2.3
