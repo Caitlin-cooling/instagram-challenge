@@ -502,9 +502,17 @@
         null,
         null,
         1,
+        null,
         1,
         1,
+        null,
         1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/features/sign_out_spec.rb": [
@@ -560,8 +568,27 @@
         1,
         null,
         null
+      ],
+      "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/models/database_associations_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
       ]
     },
-    "timestamp": 1543226024
+    "timestamp": 1543254333
   }
 }
