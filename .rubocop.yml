@@ -1,3 +1,10 @@
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'vendor/bundle/**/*'
+    - 'db/'
+    - 'app/helpers/*.rb'
+
 inherit_gem:
   rubocop-rails:
     - config/rails.yml
@@ -8,5 +15,5 @@ Style/StringLiterals:
 Style/StringLiteralsInInterpolation:
   Enabled: false
 
-Style/IndentationConsistency:
+Layout:
   EnforcedStyle: normal
