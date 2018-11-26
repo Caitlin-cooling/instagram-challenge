@@ -6,10 +6,10 @@ Rails.application.routes.draw do
   resources :pages, :posts
 
   unauthenticated do
-     root :to => 'pages#index'
+    root to: 'pages#index'
   end
 
   authenticated do
-    root :to => 'posts#index'
+    root to: 'posts#index'
   end
 end
