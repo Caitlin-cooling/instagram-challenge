@@ -22,6 +22,7 @@ end
 
 def create_post
   click_button 'New Post'
+  attach_file("Image", Rails.root + "spec/image.png")
   fill_in 'Caption', with: 'This is so cool'
   click_button 'Create Post'
 end
