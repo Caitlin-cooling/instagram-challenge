@@ -569,6 +569,21 @@
         null,
         null
       ],
+      "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/features/view_user_name_spec.rb": [
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/models/database_associations_spec.rb": [
         1,
         null,
@@ -589,6 +604,6 @@
         null
       ]
     },
-    "timestamp": 1543254333
+    "timestamp": 1543257062
   }
 }
