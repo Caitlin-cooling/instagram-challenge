@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'test_helper'
 
 describe 'Sign in' do
   it 'Allows the user to sign in to their account' do
