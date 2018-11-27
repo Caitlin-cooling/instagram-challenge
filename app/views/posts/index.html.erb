@@ -13,7 +13,7 @@
           <li><%= image_tag(post.image, class:'post-image') %></li><br>
         </div>
         <li><%= post.caption %></li>
-        <li><%= post.votes_for.size %> like</li>
+        <li><%= pluralize(post.votes_for.size, "like") %></li>
         <li><%= post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
         <li><%= button_to 'Like', post_like_url(post), method: :put %></li>
         <li><%= button_to 'Edit', edit_post_path(post), method: :get %></li>
