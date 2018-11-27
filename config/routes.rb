@@ -12,4 +12,8 @@ Rails.application.routes.draw do
   authenticated do
     root to: 'posts#index'
   end
+
+  resources :posts do
+    put 'like', to: 'posts#upvote'
+  end
 end
