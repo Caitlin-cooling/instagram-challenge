@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<h2>Your Feed</h2>
 <%= button_to 'New Post', new_post_path, method: :get %>
 <div class="all-posts">
   <% @posts.each do |post| %>
@@ -12,12 +11,19 @@
           <%= gravatar_for user %>
           <li><%= image_tag(post.image, class:'post-image') %></li><br>
         </div>
-        <li><%= post.caption %></li>
-        <li><%= pluralize(post.votes_for.size, "like") %></li>
-        <li><%= post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
-        <li><%= button_to 'Like', post_like_url(post), method: :put %></li>
-        <li><%= button_to 'Edit', edit_post_path(post), method: :get %></li>
-        <li><%= button_to 'Delete', post_path(post), method: :delete %></li>
+        <div class="info">
+          <%= link_to '❤️', post_like_url(post), method: :put %>
+          <%= link_to '💬', new_post_comment_path(post), method: :get %>
+          <%= link_to '✏️', edit_post_path(post), method: :get %>
+          <%= link_to '🗑️', post_path(post), method: :delete %>
+          <br><br>
+          <li><%= post.caption %></li>
+          <li><%= post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
+          <li><%= pluralize(post.votes_for.size, "like") %></li>
+          <% post.comments.each do |comment| %>
+            <li class="caption center-block"><%= comment.comment %></li>
+          <% end %>
+        </div>
       </div>
     </ul>
   <% end %>

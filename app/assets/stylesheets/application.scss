@@ -65,6 +65,8 @@ p {
   width: 60%;
   height: auto;
   transform: rotate(90deg);
+  margin-top: 4em;
+  margin-bottom: 1em;
 }
 
 .post {
@@ -78,6 +80,10 @@ p {
       height: auto;
       margin-bottom: 20px;
   }
+}
+
+.post {
+  text-align: center;
 }
 
 .gravatar {
@@ -100,4 +106,8 @@ a:visited {
 
 .insta:hover {
   color: none;
+}
+
+form.button_to {
+  display: inline;
 }
