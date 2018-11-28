@@ -1,5 +1,21 @@
-<div class="jumbotron">
-  <div class="container">
-    <h2>Welcome!</h2>
-    <p>To get started please sign up</p>
-</div>
+<div class="container">
+  <h1>Welcome to Instagram!</h1>
+  <h4>To get started please sign up:</h4>
+
+  <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <div><%= f.label :name %><br>
+  <%= f.text_field :name %></div>
+
+  <div><%= f.label :email %><br>
+  <%= f.email_field :email %></div>
+
+  <div><%= f.label :password %><br>
+  <%= f.password_field :password %></div>
+
+  <div><%= f.label :password_confirmation %><br>
+  <%= f.password_field :password_confirmation %></div><br>
+
+  <div><%= f.submit "Sign up" %></div>
+<% end %>
