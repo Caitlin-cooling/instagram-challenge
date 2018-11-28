@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CommentsController < ApplicationController
   before_action :find_commentable, only: :create
 
@@ -22,8 +24,8 @@ class CommentsController < ApplicationController
   end
 
   private
-  def find_commentable
-    @commentable_type = params[:commentable_type].classify
-    @commentable = @commentable_type.constantize.find(params[:commentable_id])
-  end
+    def find_commentable
+      @commentable_type = params[:commentable_type].classify
+      @commentable = @commentable_type.constantize.find(params[:commentable_id])
+    end
 end
