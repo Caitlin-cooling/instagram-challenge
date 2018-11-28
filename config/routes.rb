@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
 
-  # post '/', to: 'devise/registrations#new'
+  # post '/', to: 'comments#create'
 
   devise_for :users
   resources :pages, :posts

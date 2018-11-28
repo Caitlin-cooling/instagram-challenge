@@ -20,7 +20,8 @@
           <li><%= pluralize(post.votes_for.size, "like") %></li>
           <li><%= post.caption %></li>
           <li><%= post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
-          <% post.comments.each do |comment| %>
+          <% comments = Comment.where(commentable_id: post.id) %>
+          <% comments.each do |comment| %>
             <li class="caption center-block"><%= comment.comment %></li>
           <% end %>
         </div>
