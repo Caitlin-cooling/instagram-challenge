@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'test_helper'
 
 feature 'Posts' do
   scenario 'A users name is shown on their post' do
