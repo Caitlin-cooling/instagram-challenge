@@ -7,8 +7,8 @@
       <div class="post">
         <div class="image">
           <% user = User.find(post.user_id) %>
-          <%= user.name %>
           <%= gravatar_for user %>
+          <%= user.name %>
           <li><%= image_tag(post.image, class:'post-image') %></li><br>
         </div>
         <div class="info">
