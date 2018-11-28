@@ -21,8 +21,12 @@ ul {
   list-style-type: none;
 }
 
-h2 {
+h1, h2, h4 {
   font-weight: 300;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 p {
@@ -111,6 +115,11 @@ body {
 
 a:visited {
   color: #072738;
+}
+
+a:hover {
+  background-color: rgba(255,255,255,0);
+  text-decoration: none;
 }
 
 .insta:hover {
