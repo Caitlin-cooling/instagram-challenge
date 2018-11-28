@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
+gem 'acts_as_commentable'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'bootstrap-sass'
 gem 'devise'
