@@ -29,6 +29,10 @@ p {
   color: #484848;
 }
 
+body {
+  background-color: #f9fbfc;
+}
+
 .navbar-default .navbar-nav > li > a {
   color: #484848;
   font-weight: 300;
@@ -36,14 +40,24 @@ p {
 
 .insta {
   font-family: 'Satisfy', cursive;
-  color: white;
-  font-size: 2em;
+  // color: white;
+  font-size: 2.7em;
   float: right;
-  padding-top: 2.5%;
+  line-height: 100px;
+}
+
+.camera {
+  padding: 0.3em;
+}
+
+.bar {
+  color: #072738;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 .navbar {
-  background-color: #C4DFE6;
+  background-color: #f2f9fc;
   border: none;
 }
 
@@ -55,6 +69,8 @@ p {
   width: 60%;
   height: auto;
   transform: rotate(90deg);
+  margin-top: 5em;
+  margin-bottom: 2em;
 }
 
 .post {
@@ -64,12 +80,48 @@ p {
       display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 50%;
+      width: 100%;
       height: auto;
       margin-bottom: 20px;
   }
 }
 
+.post {
+  text-align: center;
+  border: #f2f9fc 2px solid;
+  border-radius: 3%;
+  background-color: white;
+  width: 50%;
+  margin: auto;
+}
+
+.gravatar {
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+.form {
+  position: absolute;
+  left: 42%;
+}
+
 #notice {
   color: #66A5AD;
+}
+
+a:visited {
+  color: #072738;
+}
+
+.insta:hover {
+  color: none;
+}
+
+form.button_to {
+  display: inline;
+}
+
+.add {
+  font-size: 2em;
+  padding: 2em;
 }

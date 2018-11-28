@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Instagram</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -16,7 +17,7 @@
       <div id="navbar">
         <ul class="nav navbar-nav">
           <% if user_signed_in? %>
-          <li><%= gravatar_for current_user %></li>
+          <li class="gravatar"><%= gravatar_for current_user %></li>
             <li class="dropdown">
               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 <%= current_user.name %>
@@ -32,8 +33,8 @@
             <li><%= link_to 'Sign Up', new_user_registration_path %></li>
           <% end %>
         </ul>
-        <ul class="insta">
-          <li><%= link_to 'Instagram', posts_path %></li>
+        <ul>
+          <li class="insta"><%= link_to 'Instagram', root_path %><span class="bar"> |</span><span class="camera">📷</span></li>
         </ul>
       </div>
     </div>
