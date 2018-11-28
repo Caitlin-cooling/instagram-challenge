@@ -21,7 +21,7 @@ def sign_up_as_second_user
 end
 
 def create_post
-  click_button 'New Post'
+  click_link '➕'
   attach_file("Image", Rails.root + "spec/image.png")
   fill_in 'Caption', with: 'This is so cool'
   click_button 'Create Post'

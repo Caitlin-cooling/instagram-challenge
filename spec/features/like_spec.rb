@@ -12,16 +12,16 @@ feature 'Likes' do
 
   scenario 'A user can like a post' do
     within '.all-posts' do
-      click_button 'Like'
+      click_link '❤️'
     end
     expect(page).to have_content '1 like'
   end
 
   scenario 'A user can only like a post once' do
     within '.all-posts' do
-      click_button 'Like'
-      click_button 'Like'
-      click_button 'Like'
+      click_link '❤️'
+      click_link '❤️'
+      click_link '❤️'
     end
     expect(page).to have_content '1 like'
   end
