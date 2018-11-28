@@ -117,6 +117,11 @@ a:visited {
   color: #072738;
 }
 
+a:hover {
+  background-color: rgba(255,255,255,0);
+  text-decoration: none;
+}
+
 .insta:hover {
   color: none;
 }
