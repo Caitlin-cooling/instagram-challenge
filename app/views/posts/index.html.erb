@@ -22,7 +22,8 @@
           <li><%= post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
           <% comments = Comment.where(commentable_id: post.id) %>
           <% comments.each do |comment| %>
-            <li class="caption center-block"><%= comment.comment %></li>
+          <% user = User.find(comment.user_id) %>
+            <li class="caption center-block"><%= user.name %> <%= comment.comment %></li>
           <% end %>
         </div>
       </div>

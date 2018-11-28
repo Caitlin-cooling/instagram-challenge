@@ -16,5 +16,6 @@ feature 'Comments' do
     fill_in 'comment_text', with: "Commenting on this post"
     click_button 'Comment'
     expect(page).to have_content "Commenting on this post"
+    expect(page).to have_content("Test Person", count: 2)
   end
 end
