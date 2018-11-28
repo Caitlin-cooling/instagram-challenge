@@ -36,14 +36,24 @@ p {
 
 .insta {
   font-family: 'Satisfy', cursive;
-  color: white;
-  font-size: 2em;
+  // color: white;
+  font-size: 2.7em;
   float: right;
-  padding-top: 2.5%;
+  line-height: 100px;
+}
+
+.camera {
+  padding: 0.3em;
+}
+
+.bar {
+  color: #072738;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
 }
 
 .navbar {
-  background-color: #C4DFE6;
+  background-color: #f2f9fc;
   border: none;
 }
 
@@ -72,6 +82,7 @@ p {
 
 .gravatar {
   border-radius: 50%;
+  padding: 0.5em;
 }
 
 .form {
@@ -81,4 +92,12 @@ p {
 
 #notice {
   color: #66A5AD;
+}
+
+a:visited {
+  color: #072738;
+}
+
+.insta:hover {
+  color: none;
 }

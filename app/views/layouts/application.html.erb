@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Instagram</title>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -33,7 +34,7 @@
           <% end %>
         </ul>
         <ul>
-          <li class="insta"><%= link_to 'Instagram', root_path %></li>
+          <li class="insta"><%= link_to 'Instagram', root_path %><span class="bar"> |</span><span class="camera">📷</span></li>
         </ul>
       </div>
     </div>
