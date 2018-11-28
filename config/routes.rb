@@ -2,8 +2,6 @@
 
 Rails.application.routes.draw do
 
-  # post '/', to: 'comments#create'
-
   devise_for :users
   resources :pages, :posts
 
