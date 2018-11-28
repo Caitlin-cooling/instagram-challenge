@@ -17,9 +17,9 @@
           <%= link_to '✏️', edit_post_path(post), method: :get %>
           <%= link_to '🗑️', post_path(post), method: :delete %>
           <br><br>
+          <li><%= pluralize(post.votes_for.size, "like") %></li>
           <li><%= post.caption %></li>
           <li><%= post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
-          <li><%= pluralize(post.votes_for.size, "like") %></li>
           <% post.comments.each do |comment| %>
             <li class="caption center-block"><%= comment.comment %></li>
           <% end %>
