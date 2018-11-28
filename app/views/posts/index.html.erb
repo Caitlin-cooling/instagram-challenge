@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<%= button_to 'New Post', new_post_path, method: :get %>
+<span class="add"><%=link_to '➕', new_post_path, method: :get %></span>
 <div class="all-posts">
   <% @posts.each do |post| %>
     <ul>
