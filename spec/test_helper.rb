@@ -5,6 +5,7 @@ def sign_up
   click_link 'Sign Up'
   fill_in 'Name', with: 'Caitlin Cooling'
   fill_in 'Email', with: 'caitlin@test.com'
+  attach_file("user_avatar", Rails.root + "spec/profile1.jpg")
   fill_in 'Password', with: 'caitlin123'
   fill_in 'user_password_confirmation', with: 'caitlin123'
   click_button 'Sign up'
@@ -15,6 +16,7 @@ def sign_up_as_second_user
   click_link 'Sign Up'
   fill_in 'Name', with: 'Test Person'
   fill_in 'Email', with: 'person@gmail.com'
+  attach_file("user_avatar", Rails.root + "spec/profile2.jpg")
   fill_in 'Password', with: 'test123'
   fill_in 'user_password_confirmation', with: 'test123'
   click_button 'Sign up'

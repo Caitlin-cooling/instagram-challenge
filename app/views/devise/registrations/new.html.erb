@@ -6,6 +6,11 @@
     <%= devise_error_messages! %>
 
     <div class="field">
+      <%=f.label :avatar %>
+      <%=f.file_field :avatar %>
+    </div>
+
+    <div class="field">
       <%= f.label :name %><br />
       <%= f.text_field :name %>
     </div>
