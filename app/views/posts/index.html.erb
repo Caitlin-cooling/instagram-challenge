@@ -14,8 +14,10 @@
         <div class="info">
           <%= link_to '❤️', post_like_url(post), method: :put %>
           <%= link_to '💬', new_post_comment_path(post), method: :get %>
-          <%= link_to '✏️', edit_post_path(post), method: :get %>
-          <%= link_to '🗑️', post_path(post), method: :delete %>
+          <% if current_user.id == post.user_id %>
+            <%= link_to '✏️', edit_post_path(post), method: :get %>
+            <%= link_to '🗑️', post_path(post), method: :delete %>
+          <% end %>
           <br><br>
           <li><%= pluralize(post.votes_for.size, "like") %></li>
           <li><%= post.caption %></li>
