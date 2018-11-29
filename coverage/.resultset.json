@@ -515,6 +515,8 @@
         1,
         null,
         1,
+        null,
+        1,
         1,
         null,
         null,
@@ -630,6 +632,24 @@
         null,
         null
       ],
+      "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/features/profile_page_spec.rb": [
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
       "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/features/sign_in_spec.rb": [
         null,
         null,
@@ -730,6 +750,6 @@
         null
       ]
     },
-    "timestamp": 1543501433
+    "timestamp": 1543519081
   }
 }

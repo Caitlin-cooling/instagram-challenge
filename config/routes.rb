@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   devise_for :users
   resources :pages, :posts
 
+  get '/:id', to: 'users#show'
+
   unauthenticated do
     root to: 'pages#index'
   end
