@@ -13,5 +13,12 @@ feature 'Profile picture' do
   end
 
   scenario 'User can update their profile picture' do
+    click_link 'Profile'
+    attach_file("user_avatar", Rails.root + "spec/profile2.jpg")
+    fill_in 'Password', with: 'test123'
+    fill_in 'user_password_confirmation', with: 'test123'
+    fill_in 'user_current_password', with: 'caitlin123'
+    click_button 'Update'
+    expect(page.find('.avatar')['src']).to have_content 'profile2.jpg'
   end
 end
