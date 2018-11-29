@@ -44,7 +44,6 @@ body {
 
 .insta {
   font-family: 'Satisfy', cursive;
-  // color: white;
   font-size: 2.7em;
   float: right;
   line-height: 100px;
@@ -99,9 +98,11 @@ body {
   margin: auto;
 }
 
-.gravatar {
+.avatar {
   border-radius: 50%;
   padding: 0.5em;
+  width: 75px;
+  height: 75px;
 }
 
 .form {

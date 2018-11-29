@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/features/comment_spec.rb": [
+      "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/features/add_profile_picture_spec.rb": [
         null,
         null,
         1,
@@ -9,18 +9,17 @@
         1,
         null,
         1,
-        1,
-        1,
-        1,
-        1,
+        2,
         null,
         null,
         1,
+        null,
         1,
+        null,
+        null,
+        null,
         1,
-        1,
-        1,
-        1,
+        null,
         null,
         null
       ],
@@ -508,8 +507,6 @@
         null,
         1,
         null,
-        null,
-        null,
         1,
         1,
         null,
@@ -521,6 +518,29 @@
         1,
         null,
         null,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/caitlincooling/Projects/WeekendChallenges/instagram-challenge/spec/features/comment_spec.rb": [
+        null,
+        null,
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
         1,
         1,
         1,
@@ -595,12 +615,6 @@
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
         null,
         null,
         1,
@@ -662,6 +676,6 @@
         null
       ]
     },
-    "timestamp": 1543440885
+    "timestamp": 1543486023
   }
 }
