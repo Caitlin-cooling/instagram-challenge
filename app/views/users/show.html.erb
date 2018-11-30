@@ -5,7 +5,8 @@
 <% @posts.each do |post| %>
     <div class="post">
       <div class="image">
-        <%= link_to image_tag(post.image, class:'post-image'), post_path(post) %><br>
+        <%= image_tag(post.image, class:'post-image')  %>
+        <%= link_to "See more", post_path(post) %><br>
       </div>
     </div>
 <% end %>
