@@ -1,1 +1,12 @@
-<h1>Hi <%= @user.name %></h1>
+<div class="profile">
+  <h1><%= image_tag(current_user.avatar, class:"avatar", id:"user") %><%= current_user.name %></h1>
+</div>
+
+<% @posts.each do |post| %>
+    <div class="post">
+      <div class="image">
+        <%= image_tag(post.image, class:'post-image')  %>
+        <%= link_to "See more", post_path(post) %><br>
+      </div>
+    </div>
+<% end %>

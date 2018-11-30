@@ -32,3 +32,9 @@ end
 def log_out
   click_link 'Log out'
 end
+
+def write_comment
+  click_link '💬'
+  fill_in 'comment_text', with: "Commenting on this post"
+  click_button 'Comment'
+end
