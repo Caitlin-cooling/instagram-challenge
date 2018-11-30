@@ -1,12 +1,18 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <div>
-    <%= image_tag(@post.image, class:"post-image") %>
-  </div>
-  <br>
-  <%= @post.caption %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+<div>
+  <ul>
+    <li><%= image_tag(@post.image, class:"post-image") %></li>
+    <%= link_to '❤️', post_like_url(@post), method: :put %>
+    <%= link_to '💬', new_post_comment_path(@post), method: :get %>
+    <%= link_to '✏️', edit_post_path(@post), method: :get %>
+    <%= link_to '🗑️', post_path(@post), method: :delete %>
+    <li><%= pluralize(@post.votes_for.size, "like") %></li>
+    <li><%= @post.caption %></li>
+    <li><%= @post.created_at.strftime('%I:%M %p, %A, %b %d') %></li>
+    <% comments = Comment.where(commentable_id: @post.id) %>
+    <% comments.each do |comment| %>
+    <% user = User.find(comment.user_id) %>
+      <li><strong><%= user.name %></strong> <%= comment.comment %></li>
+    <% end %>
+  </ul>
+</div>
+<br>
