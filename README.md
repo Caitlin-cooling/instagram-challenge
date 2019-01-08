@@ -2,7 +2,7 @@
 
 # Instagram Challenge
 
-This challenge is an Instagram clone in rails.
+This challenge is an Instagram clone using Ruby on Rails.
 
 ### Using the app
 
