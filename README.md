@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Caitlin-cooling/instagram-challenge.svg?branch=master)](https://travis-ci.org/Caitlin-cooling/instagram-challenge)
+
 # Instagram Challenge
 
 This challenge is an Instagram clone in rails.
@@ -40,7 +42,9 @@ The tests for this repo are written using rspec and capybara. To run the tests, 
 - Acts_as_commentable gem - comments
 
 ### My Approach to Solving the Problem
+I used TDD and OOP principles when solving this problem. I practice "the rails way" including DRY and Convention over Configuration. I used gems that I had never used before such as Devise, Acts_as_votable and Acts_as_commentable for practice "not reinventing the wheel".
 
+I kept the user in the forefront of my mind when completing this challenge, as a user of Instagram myself I wanted to create a as much of a smooth experience as possible.
 
 ### Known Issues
 - Currently when a user deletes their account and they still have posts in the database, the feed will break. Please ensure that you delete your posts before you delete your account.
