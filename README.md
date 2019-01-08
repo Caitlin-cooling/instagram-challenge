@@ -37,6 +37,9 @@ The tests for this repo are written using rspec and capybara. To run the tests, 
 - Acts_as_votable gem - likes
 - Acts_as_commentable gem - comments
 
+### My Approach to Solving the Problem
+
+
 ### Known Issues
 - Currently when a user deletes their account and they still have posts in the database, the feed will break. Please ensure that you delete your posts before you delete your account.
 - All pages are expecting a user to have an avatar, so please upload one when you sign up.
