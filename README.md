@@ -24,8 +24,10 @@ A user can edit the details of their account, and delete their account.
 5. `rails s`
 6. `localhost:3000`
 
-### How to run the tests
-The tests for this repo are written using rspec and capybara. To run the tests, run `rspec` from the command line.
+### Tests
+The tests for this repo are written using rspec and capybara. To run the tests, run `rspec` from the command line. Test coverage is calculated using Simplecov.
+
+![alt text](/app/assets/images/tests.png)
 
 ### Technologies Used
 - Ruby on Rails - the web framework
