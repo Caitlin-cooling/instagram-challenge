@@ -2,6 +2,8 @@
 
 This challenge is an Instagram clone in rails.
 
+### Using the app
+
 This app is also hosted on Heroku and can be found [here](https://caitlin-instagram-challenge.herokuapp.com/).
 
 You will then be asked to create an account with an avatar or log in if you have one already. From there you will see your feed with all posts.
