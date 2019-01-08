@@ -1,6 +1,6 @@
 # Instagram Challenge
 
-This challenge is an Instagram clone in rails. The Kanban board can be found [here](https://waffle.io/Caitlin-cooling/instagram-challenges).
+This challenge is an Instagram clone in rails.
 
 This app is also hosted on Heroku and can be found [here](https://caitlin-instagram-challenge.herokuapp.com/).
 
